@@ -1,0 +1,153 @@
+Задача 1
+----
+PS C:\Users\Fonarmeister\Desktop\VSCODE\advanced_python\hw1> python .\nl.py --input_file="artifacts/test1.txt"
+1       1
+2       2 2
+3       3
+4       4 44 4 4 4
+5       55
+6       6
+7       6
+8       7
+9       8
+10      9999
+11      10
+12      11
+13      12
+PS C:\Users\Fonarmeister\Desktop\VSCODE\advanced_python\hw1> python .\nl.py
+a
+1       a
+ac
+2       ac
+d
+3       d
+
+4
+dg
+5       dg
+sdd
+6       sdd
+^Z
+PS C:\Users\Fonarmeister\Desktop\VSCODE\advanced_python\hw1> python .\nl.py --input_file="aaaa"
+Error: File 'aaaa' not found.
+PS C:\Users\Fonarmeister\Desktop\VSCODE\advanced_python\hw1>
+----
+
+Задача 2
+----
+PS C:\Users\Fonarmeister\Desktop\VSCODE\advanced_python\hw1> python .\tail.py --input_files artifacts/test1.txt
+4 44 4 4 4
+55
+6
+6
+7
+8
+9999
+10
+11
+12
+PS C:\Users\Fonarmeister\Desktop\VSCODE\advanced_python\hw1> python .\tail.py --input_files artifacts/test1.txt artifacts/test2.txt
+<==artifacts/test1.txt==>
+4 44 4 4 4
+55
+6
+6
+7
+8
+9999
+10
+11
+12
+
+<==artifacts/test2.txt==>
+e
+fff
+gg g g  g
+h
+i
+j
+k
+l
+mm m
+n
+
+
+PS C:\Users\Fonarmeister\Desktop\VSCODE\advanced_python\hw1> python .\tail.py --input_files=12331
+Error: File '12331' not found.
+PS C:\Users\Fonarmeister\Desktop\VSCODE\advanced_python\hw1> python .\tail.py
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+^Z
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+
+PS C:\Users\Fonarmeister\Desktop\VSCODE\advanced_python\hw1>
+----
+
+Задача 3
+----
+PS C:\Users\Fonarmeister\Desktop\VSCODE\advanced_python\hw1> python .\wc.py --input_files artifacts/test1.txt artifacts/test2.txt
+      13      18      43 artifacts/test1.txt
+      14      25      62 artifacts/test2.txt
+      27      43     105 total
+PS C:\Users\Fonarmeister\Desktop\VSCODE\advanced_python\hw1> python .\wc.py --input_files artifacts/test1.txt artifacts/test2.txt
+      13      18      43 artifacts/test1.txt
+      14      25      62 artifacts/test2.txt
+      27      43     105 total
+PS C:\Users\Fonarmeister\Desktop\VSCODE\advanced_python\hw1> python .\wc.py
+a
+f
+d
+12313
+43141
+af
+
+^Z
+       7       6      22
+PS C:\Users\Fonarmeister\Desktop\VSCODE\advanced_python\hw1> python .\wc.py --input_files abc
+Error: File 'abc' not found.
+PS C:\Users\Fonarmeister\Desktop\VSCODE\advanced_python\hw1> python .\wc.py --input_files artifacts/test1.txt abc artigacts/test2.txt
+      13      18      43 artifacts/test1.txt
+Error: File 'abc' not found.
+Error: File 'artigacts/test2.txt' not found.
+      13      18      43 total
+PS C:\Users\Fonarmeister\Desktop\VSCODE\advanced_python\hw1> python .\wc.py --input_files artifacts/test1.txt abc artifacts/test2.txt
+      13      18      43 artifacts/test1.txt
+Error: File 'abc' not found.
+      14      25      62 artifacts/test2.txt
+      27      43     105 total
+PS C:\Users\Fonarmeister\Desktop\VSCODE\advanced_python\hw1>
+----
