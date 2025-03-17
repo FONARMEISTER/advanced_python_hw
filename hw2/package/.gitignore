@@ -1,0 +1,3 @@
+build/*
+dist/*
+fonarmeister_latex_helper.egg-info/*

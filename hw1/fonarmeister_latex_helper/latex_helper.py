@@ -29,6 +29,15 @@ def generate_latex_image(image_path, width=None, caption=None, label=None):
     return image
 
 
+def make_document_from_latex(latex_code):
+    doc = "\\documentclass{article}\n"
+    doc += "\\usepackage{graphicx}\n"
+    doc += "\\begin{document}\n"
+    doc += latex_code
+    doc += "\\end{document}\n"
+    return doc
+
+
 def generate_pdf_from_latex(latex_code, output_filename="output_document"):
     tex_file = f"{output_filename}.tex"
     with open(tex_file, "w") as file:
