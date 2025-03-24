@@ -1,0 +1,9 @@
+name = "hw3"
+version = "0.1.0"
+description = "Matrix library"
+requires-python = ">=3.10"
+authors = [
+    { name = "Ilya Sarantsev", email = "minidoc004@gmail.com" },
+]
+dependencies = ["numpy", "functools"]
+keywords = [ "matrix", "hash" ]
